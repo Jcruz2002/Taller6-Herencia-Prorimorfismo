@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ordenador">
+  <ClassDiagramComponents>
+    <Class name="Ordenador" package="" visibility="public" xPosition="535.0" yPosition="104.0">
+      <Fields>
+        <Field name="codigo" type="long" visibility="private"/>
+        <Field name="precio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Portatil" package="" visibility="public" xPosition="327.0" yPosition="308.0">
+      <Fields>
+        <Field name="peso" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SobreMesa" package="" visibility="public" xPosition="736.0" yPosition="327.0">
+      <Fields>
+        <Field name="Descripcion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Portatil" target="Ordenador"/>
+    <IsRelation name="is" source="SobreMesa" target="Ordenador"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

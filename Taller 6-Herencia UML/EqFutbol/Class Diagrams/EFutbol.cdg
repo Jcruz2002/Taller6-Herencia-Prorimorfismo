@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EFutbol">
+  <ClassDiagramComponents>
+    <Class name="Futbolista" package="" visibility="public" xPosition="286.0" yPosition="292.0">
+      <Fields>
+        <Field name="Dorsal" type="int" visibility="private"/>
+        <Field name="Demarcacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Entrenador" package="" visibility="public" xPosition="601.0" yPosition="328.0">
+      <Fields>
+        <Field name="Federacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="dirigirPartido" returnType="void" visibility="public"/>
+        <Method name="dirigirEntrenamiento" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Masajista" package="" visibility="public" xPosition="914.0" yPosition="273.0">
+      <Fields>
+        <Field name="Titulacion" type="String" visibility="private"/>
+        <Field name="Experiencia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="darMasaje" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="611.0" yPosition="41.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Apellidos" type="String" visibility="private"/>
+        <Field name="Edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Concentarse" returnType="void" visibility="public"/>
+        <Method name="viajar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Masajista" target="Persona"/>
+    <IsRelation name="is" source="Entrenador" target="Persona"/>
+    <IsRelation name="is" source="Futbolista" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

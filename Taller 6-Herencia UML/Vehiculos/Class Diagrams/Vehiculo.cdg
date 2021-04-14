@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Vehiculo">
+  <ClassDiagramComponents>
+    <Class name="Vehiculo" package="" visibility="public" xPosition="580.0" yPosition="90.0">
+      <Fields>
+        <Field name="NumeroSerie" type="String" visibility="private"/>
+        <Field name="Marca" type="String" visibility="private"/>
+        <Field name="An" type="int" visibility="private"/>
+        <Field name="Precio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Compacto" package="" visibility="public" xPosition="270.0" yPosition="249.0">
+      <Fields>
+        <Field name="NPasajeros" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DeLujo" package="" visibility="public" xPosition="477.0" yPosition="342.0">
+      <Fields>
+        <Field name="NPasajeros" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Camionetas" package="" visibility="public" xPosition="717.0" yPosition="342.0">
+      <Fields>
+        <Field name="Carga" type="double" visibility="private"/>
+        <Field name="ejes" type="int" visibility="private"/>
+        <Field name="rodadas" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vagonetas" package="" visibility="public" xPosition="973.0" yPosition="206.0">
+      <Fields>
+        <Field name="NPasajeros" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Vagonetas" target="Vehiculo"/>
+    <IsRelation name="is" source="Compacto" target="Vehiculo"/>
+    <IsRelation name="is" source="Camionetas" target="Vehiculo"/>
+    <IsRelation name="is" source="DeLujo" target="Vehiculo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

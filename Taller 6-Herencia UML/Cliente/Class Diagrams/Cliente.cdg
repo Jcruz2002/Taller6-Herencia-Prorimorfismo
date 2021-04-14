@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Cliente">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="" visibility="public" xPosition="263.0" yPosition="193.0">
+      <Fields>
+        <Field name="NIF" type="int" visibility="private"/>
+        <Field name="NumeroCuenta" type="long" visibility="private"/>
+        <Field name="Saldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ClientePreferente" package="" visibility="public" xPosition="590.0" yPosition="248.0">
+      <Fields>
+        <Field name="NFondos" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ToString" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fondos" package="" visibility="public" xPosition="904.0" yPosition="193.0">
+      <Fields>
+        <Field name="Numero" type="int" visibility="private"/>
+        <Field name="saldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Tiene" source="ClientePreferente" target="Fondos" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="ClientePreferente" target="Cliente"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

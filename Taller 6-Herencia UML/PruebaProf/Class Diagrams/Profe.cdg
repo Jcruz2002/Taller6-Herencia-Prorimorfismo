@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Profe">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="830.0" yPosition="159.0">
+      <Fields>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Apellido" type="String" visibility="private"/>
+        <Field name="SeApellido" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="574.0" yPosition="197.0">
+      <Fields>
+        <Field name="idProfe" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorInterino" package="" visibility="public" xPosition="303.0" yPosition="178.0">
+      <Fields>
+        <Field name="ID" type="String" visibility="private"/>
+        <Field name="FechaI" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="ProfesorInterino" target="Profesor"/>
+    <IsRelation name="is" source="Profesor" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Producto">
+  <ClassDiagramComponents>
+    <Class name="Producto" package="" visibility="public" xPosition="558.0" yPosition="127.0">
+      <Fields>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Precio" type="int" visibility="private"/>
+        <Field name="Cantidad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Calcularprecio" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perecedero" package="" visibility="public" xPosition="902.0" yPosition="307.0">
+      <Fields>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Calcularprecio" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NoPerecedero" package="" visibility="public" xPosition="235.0" yPosition="317.0">
+      <Fields>
+        <Field name="diaCaducar" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Calcularprecio" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Perecedero" target="Producto"/>
+    <IsRelation name="is" source="NoPerecedero" target="Producto"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
